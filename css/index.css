@@ -63,6 +63,56 @@ a {
 .fullPage-dir-h {
     float: left;
 }
+/* 箭头 */
+@-webkit-keyframes start {
+    0%,30% {
+        opacity: 0.2;
+        -webkit-transform: translate(0,10px);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate(0,0);
+    }
+    100% {
+        opacity: 0.2;
+        -webkit-transform: translate(0, -5px);
+    }
+}
+@keyframes start {
+    0%,30% {
+        opacity: 0.2;
+        transform: translate(0,10px);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+    100% {
+        opacity: 0.2;
+        transform: translate(0, -5px);
+    }
+}
+.start {
+    position: fixed;
+    left: 50%;
+    margin-left: -0.19rem;
+    top: 95%;
+    margin-top: -0.12rem;
+    width: 0.37rem;
+    height: 0.44rem;
+}
+.start b {
+    position: absolute;
+    left: 50%;
+    top: 0.1rem;
+    margin-left: -0.19rem;
+    width: 0.37rem;
+    height: 0.24rem;
+    background: url(../img/arrow.png);
+    background-size: 100% 100%;
+    -webkit-animation: start 1.5s infinite ease-in-out;
+    animation: start 1.5s infinite ease-in-out;
+    }
 /*fullpage*/
 /*-----------------------------------------------------------------*/
 
