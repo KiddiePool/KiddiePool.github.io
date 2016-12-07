@@ -1,0 +1,756 @@
+body,
+div,
+ul,
+li,
+dl,
+dt,
+dd,
+ol,
+p,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+textarea,
+table,
+tr,
+td,
+a {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 12px;
+	font-family: "微软雅黑";
+}
+
+img {
+	border: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+.fullPage-wp{   
+    -webkit-transform: translate3d(0,0,0);     
+    transform: translate3d(0,0,0);     
+}
+.fullPage-wp:after {
+    display: block;
+    content: ' ';
+    height: 0;
+    clear: both;
+}
+.fullPage-wp.anim{
+    -webkit-transition: all 500ms ease-out 0s;
+    transition: all 500ms ease-out 0s; 
+}
+.fullPage-page{
+    display: block;
+    overflow: hidden;
+}
+
+.fullPage-dir-h {
+    float: left;
+}
+/*fullpage*/
+/*-----------------------------------------------------------------*/
+
+html {
+	font-size: 100px;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	
+}
+.wp{
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+.page{
+	overflow: hidden;
+	padding:0 0.22rem;
+	background: #8c0cc1;
+	position: relative;
+}
+/*工资收入*/
+#wage{
+	margin-top:1rem;
+}
+.wage_img{
+	width:2.68rem;
+	height:3.45rem;
+	margin:0.3rem auto 0.1rem;
+	background:url(../img/cartoon_img.png) no-repeat center;
+	background-size:contain;	
+}
+.wage_title{
+	font-size: 0.58rem;
+	text-align: center;
+	color:#ffcd10;
+}
+.wage_title1{
+	font-size: 0.48rem;
+	text-align: center;
+	color:#ffcd10;
+}
+.wage_logo{
+	width:3.08rem;
+	height:0.63rem;
+	margin-top:0.3rem;
+	margin-right:0.36rem;
+	background:url(../img/logos.png) no-repeat center;
+	background-size:contain;
+}
+/*云缴费/云支付默认页*/
+.cloudLogo{
+	width:1.47rem;
+	height:0.89rem;
+	margin:0.61rem auto 0;
+	background:url(../img/cloudLogo.png) no-repeat center;
+	background-size:contain;
+}
+.paymentLogo{
+	width:2.25rem;
+	height:0.58rem;
+	margin:0.41rem auto 0;
+	background:url(../img/paymentLogo.png) no-repeat center;
+	background-size:contain;
+}
+.default_title{
+	font-size: 0.42rem;
+	text-align: center;
+	font-weight: bolder;
+	color:#fdd000;
+	margin-top:0.24rem;
+}
+.default_p{
+	font-size: 0.3rem;
+	text-align: center;
+	font-weight: bold;
+	color:#fdd000;
+	margin-top:0.20rem;
+}
+.default_see{
+	width:3.41rem;
+	height:0.67rem;
+	margin:0 auto;
+	background:url(../img/default.png) no-repeat center;
+	background-size:contain;
+	margin-top:0.38rem;
+}
+.default_look{
+	width:3.41rem;
+	height:0.67rem;
+	margin:0 auto;
+	background:url(../img/default_look.png) no-repeat center;
+	background-size:contain;
+	margin-top:0.38rem;
+}
+.cloud_default .default_logo{
+	margin-top:0.66rem;
+}
+.default_people{
+	width:2.47rem;
+	height:2.51rem;
+	background:url(../img/default_people.png) no-repeat center;
+	background-size:contain;
+	position: absolute;
+	bottom:0.2rem;
+	right:0.09rem;
+}
+/*云缴费*/
+.payment_logo{
+	width:2.59rem;
+	height:0.66rem;
+	background:url(../img/payment_logo.png) no-repeat center;
+	background-size:contain;
+	margin:0.53rem auto 0;
+}
+.payment_title{
+	font-size: 0.46rem;
+	text-align: center;
+	color:#ffcd10;
+}
+.payment_titles{
+	margin-top:0.66rem;
+}
+.payment .consumption_cloud{
+	margin-top:0.84rem;
+	margin-bottom:0.4rem;
+}
+.payment .history_contoin{
+	margin:0.5rem auto 0;
+}
+.payment .consumption_cloud ul {
+	margin-left:2.24rem;
+}
+.payment .consumption_people{
+	width:2.59rem;
+	height:2.65rem;
+	background:url(../img/payPeople.png) no-repeat center;
+	background-size:contain;
+	position: absolute;
+	bottom:0.25rem;
+	left:0.08rem;
+}
+.payment_p1{
+	font-size: 0.46rem;
+	text-align: center;
+	font-weight: bold;
+	color:#ffd102;
+}
+.payment_contain{
+	width:100%;
+	text-align: right;
+}
+.payment_logos,.default_logo{
+	display: inline-block;
+	width:3.08rem;
+	height:0.63rem;
+	margin-top:0.1rem;
+	margin-right:0.14rem;
+	background:url(../img/logos.png) no-repeat center;
+	background-size:contain;
+}
+/*资产配置*/
+.asset_head {
+	font-size: 0.36rem;
+	text-align: center;
+	font-weight: bold;
+	color:#fdd000;
+	margin-top: 0.68rem;
+}
+.asset_contain {
+	width: 6rem;
+	height: 6rem;
+	margin: 0 auto;
+}
+.asset_small{
+	width:2.03rem;
+	height:2.5rem;
+	background:url(../img/asset_logo.png) no-repeat center;
+	background-size:contain;
+	position: absolute;
+	top:4.98rem;
+	right:0.16rem;
+}
+.asset_p1,.asset_p3{
+	font-size: 0.38rem;
+	text-align: center;
+	color:#fdd000;
+	margin-top:0.38rem;
+}
+.asset_p2{
+	font-size: 0.42rem;
+	text-align: center;
+	font-weight: bolder;
+	color:#fdd000;
+	margin-top:0.3rem;
+	
+}
+.asset_logo{
+	width:3.08rem;
+	height:0.63rem;
+	margin:0.5rem auto 0;
+	background:url(../img/logos.png) no-repeat center;
+	background-size:contain;
+}
+/*历史合作*/
+.history_contoin{
+	height:1.13rem;
+	padding:0.18rem 0; 
+	position: relative;
+	border: 1px solid #fff;
+	border-radius: 0.2rem;
+	margin:0.81rem auto 0;
+}
+.history_top{
+	position:relative;
+	width:5.44rem;
+	height:1.14rem;
+	margin:0 auto;
+}
+.history_contoin ul{
+	overflow: hidden;
+}
+.history_contoin li{
+	position: relative;
+	width:0.63rem;
+	height:1.14rem;
+	background:url(../img/size.png) no-repeat center;
+	background-size:contain;
+	float: left;
+}
+.history_contoin li:nth-child(4){
+	margin-right:0.2rem;
+}
+.history_contoin li:nth-child(6){
+	margin-right:0.2rem;
+}
+.history_numer i{
+	display: inline-block;
+	width:0.3rem;
+	height:0.62rem;
+	position:relative;
+	background:url(../img/historyBj.png) no-repeat center;
+	background-size:contain;
+	vertical-align: middle;
+}
+.history_numer i img{
+	width:0.18rem;
+	height:0.29rem;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+}
+.history_time{
+	width:6.4rem;
+    position: absolute;
+    top:-0.24rem;
+    left:50%;
+    margin-left:-3.2rem;
+    text-align: center;	
+}
+.history_time span{
+	  padding:0 0.2rem;
+	  background:#8c0cc1;	
+	  font-size: 0.3rem;
+	  color:#fff;
+}
+.history_time i{
+	font-style: normal;
+	font-size: 0.3rem;
+	color: #fff;
+}
+.history_i{
+	margin:0 0.26rem;
+}
+.history_p{
+	text-align: center;
+	font-size: 0.32rem;
+	font-weight: bold;
+	color: #fdd000;
+	margin-top:0.3rem;
+}
+.history_num{
+	text-align: center;
+	font-size: 0.5rem;
+	font-weight: bolder;
+	color: #fdd000;
+	margin-top:0.3rem;
+	font-family: "方正兰亭黑粗简体";
+}
+.history_logo{
+	width:3.08rem;
+	height:0.63rem;
+	background:url(../img/logos.png) no-repeat center;
+	background-size:contain;
+	margin-top: 0.4rem;
+	margin-left:0.2rem;
+}
+.history_small{
+	width:4.34rem;
+	height:4.10rem;
+	position: absolute;
+	bottom:0.37rem;
+	right:0.2rem;
+	background:url(../img/history_small.png) no-repeat center;
+	background-size:contain;
+}
+/*引导页*/
+.wp .guide{
+	background:#8c0cc1 url(../img/guide_bj.png) no-repeat center;
+	background-size:100% 100%;
+}
+.guide_logo{
+	width:3.04rem;
+	height:0.63rem;
+	margin-top:0.43rem;
+	margin-right:0.5rem;
+	background:url(../img/guide_logo.png) no-repeat center;
+	background-size:contain;
+}
+.guide_title{
+	width:5.59rem;
+	height:2.41rem;
+	margin:0.58rem auto 0;
+	background:url(../img/guide_title.png) no-repeat center;
+	background-size:contain;
+}
+.guide_clcik{
+    width:5.8rem;
+	height:1.27rem;
+	margin:0.12rem auto 0;
+	background:url(../img/click.png) no-repeat center;
+	background-size:contain;
+}
+.boundBank{
+	width:3.41rem;
+	height:0.67rem;
+	margin:0.52rem auto 0;
+	background:url(../img/boundBank.png) no-repeat center;
+	background-size:contain;
+}
+.newUser{
+	width:3.41rem;
+	height:0.67rem;
+	margin:0.34rem auto 0;
+	background:url(../img/newUser.png) no-repeat center;
+	background-size:contain;
+}
+.guide_p{
+	  color:#fdd000;
+	  text-align: center;
+	  margin-top:0.27rem;
+	  font-size:0.3rem;
+}
+/*消费分布*/
+.cloud_logo{
+	width:1.66rem;
+	height:1.01rem;
+	margin:0.49rem auto 0;
+	background:url(../img/logo.png) no-repeat center;
+	background-size:contain;
+}
+.consumption_money{
+	position: relative;
+	padding:0.18rem 0.12rem;
+	border: 1px solid #fff;
+	border-radius: 0.2rem;
+	margin-top:0.41rem;
+	margin-bottom:0.48rem;
+}
+.contain_money{
+	width:5.69rem;
+	margin:0 auto;
+	position: relative;
+}
+.contain_money ul{
+	height:1.14rem;
+}
+.contain_money li{
+	float: left;
+	width:0.63rem;
+	height:1.14rem;
+	position: relative;
+	background:url(../img/size.png) no-repeat center;
+	background-size:contain;
+} 
+.number_img{
+	display: inline-block;
+	width:0.38rem;
+	height:0.58rem;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom: 0;
+	margin:auto;
+	background-size:contain;
+	
+} 
+.dot{
+	background-size:auto;
+}
+#consumption_pie{
+	width:100%;
+	height:5.0rem;
+}
+
+.consumption_cloud{
+	height:4.37rem;
+	position: relative;
+	padding-left:0.7rem;
+	padding-top:0.32rem;
+	border: 1px solid #fff;
+	border-radius: 0.2rem;
+	margin-bottom:0.5rem;
+}
+.cloud_style{
+	 color:#fdd000;
+	  font-size:0.3rem;
+	 font-weight: bold;
+}
+.cloud_number{
+	color:#fff;
+	font-size:0.3rem;
+	margin:0.1rem 0;
+}
+.cloud_number i{
+	font-style: normal;
+}
+.cloud_num{
+	display: inline-block;
+	width:1.2rem;
+}
+.consumption_people{
+	width:2.28rem;
+	height:2.43rem;
+	position: absolute;
+	bottom:0.38rem;
+	right:0.18rem;
+	background:url(../img/people.png) no-repeat center;
+	background-size:contain;
+}
+.history_time .consumption_title{
+	  font-size:0.36rem;
+}
+.wp .history_times{
+	top:-0.26rem;
+}
+.consumption_point{
+	  text-align: center;
+	  color:#fdd000;
+	  font-size:0.34rem;
+	 font-weight: bold;
+}
+.logos{
+	width:3.08rem;
+	height:0.63rem;
+	background:url(../img/logos.png) no-repeat center;
+	background-size:contain;
+	margin: 0.3rem auto 0;
+}
+/*没有资产配置和理财购买的默认页*/
+.wp .bill{
+	background:#8c0cc1 url(../img/bill_bj.png) no-repeat center;
+	background-size:cover;
+	padding:0;
+}
+.bill_p1{
+	margin-top:1.32rem;
+	text-align: center;
+	font-size: 0.56rem;
+	color:#fdd000;
+	font-weight: bolder;
+}
+.bill_p2{
+	text-align: center;
+	font-size: 0.34rem;
+	color:#fdd000;
+	margin-top:0.28rem;
+}
+.bill_logo{
+	width:3.08rem;
+	height:0.63rem;
+	background:url(../img/logos.png) no-repeat center;
+	background-size:contain;
+	margin: 0.74rem auto 0;
+}
+
+
+/*第三页--常去网点*/
+.consumption_cloud.welcome {
+	height: 3.37rem;
+	margin-top: 0.52rem;
+}
+
+.welcome table  {
+	margin-top: 0.17rem;
+	font-family: "微软雅黑";
+	font-size: 0.30rem;
+	color: #FDD000;
+	line-height: 0.48rem;
+}
+.welcome table th {
+	color: #FFFFFF;
+}
+
+.welcome table tr {
+	
+}
+.welcome table td {
+	text-align: center;
+}
+.often-network {
+	position: relative;
+}
+.rain-water {
+	width:5.86rem;
+	height:4.27rem;
+	background:url(../img/rain_water.png) no-repeat center;
+	background-size:contain;
+	margin: 0.2rem auto;
+	
+	margin-bottom: 0.4rem;
+	
+}
+.often-logo {
+   position: absolute;
+   bottom: -0.35rem;
+   right: 0.2rem;
+}
+.often-text {
+	text-align: center;
+	  color:#fdd000;
+	  font-size:0.30rem;
+	  line-height: 0.44rem;
+	 /*font-weight: bold;*/
+}
+
+
+/*第五页--理财购买*/
+#purchase {
+	margin-top: 0.9rem;
+	margin-bottom: 0.54rem;
+}
+.purchase-text {
+	text-align: center;
+	color: #FDD000;
+	font-family: "微软雅黑";
+	font-size: 0.32rem;
+	line-height: 0.48rem;
+	font-weight: bold;
+}
+.purchase-text span {
+	font-size: 0.42rem;
+}
+.dollars {
+	height: 0.85rem;
+	width: 100%;
+	margin-top: 0.4rem;
+	margin-bottom: 0.48rem;
+	text-align: center;
+	position: relative;
+}
+.dollars ul {
+	display: inline-block;
+	height: 0.85rem;
+	float: left;
+	position: absolute;
+	left: 50%;
+	margin-left: -2.35rem;
+}
+.dollars li {
+	width: 0.86rem;
+	height: 0.85rem;
+	float: left;
+	margin-left: 0.08rem;
+}
+.full-dollar {
+	background: url('../img/full_dollar.png') no-repeat center;
+	background-size: contain;
+}
+.half-dollar {
+	background: url('../img/half_dollar.png') no-repeat center;
+	background-size: contain;
+}
+.zero-dollar {
+	background: url('../img/zero_dollar.png') no-repeat center;
+	background-size: contain;
+}
+.awesome-text {
+	text-align: center;
+	color: #FDD000;
+	font-size: 0.48rem;
+	font-family: "微软雅黑";
+	font-weight: bolder;
+}
+.cartoon-img {
+	height: 3.45rem;
+	margin-top: 0.34rem;
+	position: relative;
+}
+.cartoon-img img {
+	position: absolute;
+	width: 2.68rem;
+	right: 0.85rem;
+}
+.logos.purchase-logo {
+	text-align: left;
+	margin-left: 0.5rem;
+}
+
+
+
+.diamond_img{
+	width:5.84rem;
+	height: 6.25rem;
+	background:url('../img/diamond.png') no-repeat center;
+	background-size: contain;
+	margin:0 auto;
+}
+.designation-text {
+	font-family: "微软雅黑";
+	font-size: 0.4rem;
+	line-height: 0.68rem;
+	font-weight: bold;
+	color: #FDD000;
+	text-align: center;
+}
+.designation-name {
+	font-size: 0.7rem;
+	font-weight: bolder;
+	margin-top:0.2rem;
+}
+/*白金用户*/
+.platinum_img{
+	width: 3.11rem;
+	height: 5.42rem;
+	background:url('../img/platinum.png') no-repeat center;
+	background-size: contain;
+	margin: 0.65rem auto 0.54rem;
+    
+}
+.platinum .decrible,.crown .decrible{
+	margin:0; 
+}
+.platinum_logo{
+	width:3.08rem;
+	height:0.63rem;
+	background:url(../img/logos.png) no-repeat center;
+	background-size:contain;
+	position: absolute;
+	bottom:0.56rem;
+	left:50%;
+	margin-left:-1.54rem;
+}
+/*皇冠用户*/
+.crown{
+	background:url(../img/crown_bj.png) no-repeat center;
+	background-size:cover;
+}
+.crown_img{
+	width:3.51rem;
+	height:4.26rem;
+	background:url(../img/crown.png) no-repeat center;
+	background-size:contain;
+	margin: 1.74rem auto 0;
+}
+/*黄金用户*/
+.wp .gold{
+	padding:0;
+}
+.gold_img{
+	width:100%;
+	height:4.03rem;
+	background:url(../img/gold.png) no-repeat center;
+	background-size:contain;
+	margin: 1.74rem auto 0.7rem;
+}
+/*白银用户*/
+.silver_img{
+	width:4.98rem;
+	height:3.91rem;
+	background:url(../img/silver.png) no-repeat center;
+	background-size:contain;
+	margin: 2.16rem auto 0.46rem;
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>个性化账单</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script type="text/javascript" src="js/zepto.min.js" ></script>
+   <!-- <script src="js/jquery-1.10.1.min.js"></script>-->
+   <script type="text/javascript" src="js/zepto.fullpage.js" ></script>
+    <script type="text/javascript" src="js/echarts.min.js" ></script>
+    <script type="text/javascript" src="js/common.js" ></script>
+    <script type="text/javascript" src="js/index.js" ></script>
+</head>
+<body>
+<div class="wp">
+  <div class="wp-inner">
+  	<!--第一页--引导页-->
+  	<div class="page guide">
+  		<div class="guide_logo"></div>
+  		<div class="guide_title"></div>
+  		<div class="guide_clcik"></div>
+  		<div class="boundBank"></div>
+  		<p class="guide_p">您需要先绑定光大银行卡才能生成账单</p>
+  		<div class="newUser"></div>
+  		<p class="guide_p">想生成自己的对账单新用户请注册 </p>
+  		
+    </div>
+  	 <!--第二页--历史合作-->
+  	<div class="page history">
+  		
+  			<div class="history_contoin">
+  				<div class="history_top">
+  					<ul>
+	  					<li><img class="number_img" src="img/2.png"/></li>	
+	  					<li><img class="number_img" src="img/0.png"/></li>
+	  					<li><img class="number_img" src="img/1.png"/></li>
+	  					<li><img class="number_img" src="img/6.png"/></li>
+	  					<li><img class="number_img" src="img/1.png"/></li>	
+	  					<li><img class="number_img" src="img/2.png"/></li>
+	  					<li><img class="number_img" src="img/0.png"/></li>
+	  					<li><img class="number_img" src="img/5.png"/></li>
+  				    </ul>
+  				
+  				</div>
+  				<div  class="history_time">
+  					<span><i>年/YEAR</i><i class="history_i">月/MONTH</i><i>日/DAY</i></span>
+  				</div>
+  				
+  			</div>
+             <p class="history_p">我们首次相遇在广大</p>
+             <p class="history_num">作为<span class="history_numer"></span>名阳光朋友</p>
+             <p class="history_p">有了广大助力,</p>
+             <p class="history_p">让您的生活从此走上越花越省,</p>
+             <p class="history_p">越存越赚的光明大道!</p>
+             <div class="history_logo"></div>
+             <div class="history_small"></div>
+    </div>
+  	 <!--第三页--常去网点-->
+    <div class="page often-network">
+  		<div class="consumption_cloud welcome">
+  			<table border="0" width="100%">
+  				<tr>
+  					<th width="50%">网点名称</th>
+  					<th width="50%">次数</th>
+  				</tr>
+  				<tr>
+  					<td>北京分行</td>
+  					<td>5次</td>
+  				</tr>
+  				<tr>
+  					<td>金融街分行</td>
+  					<td>4次</td>
+  				</tr>
+  				<tr>
+  					<td>东单分行</td>
+  					<td>2次</td>
+  				</tr>
+  				<tr>
+  					<td>西单分行</td>
+  					<td>1次</td>
+  				</tr>
+  			
+  			
+  					<td>...</td>
+  					<td>...</td>
+  				</tr>
+  			</table>
+  			<div class="history_time history_times">
+  		      <span class="consumption_title">欢迎光临</span>
+  		    </div>
+  		</div>
+  		<div class="often-network">
+  			<div class="rain-water"></div>
+  			<div class="logos often-logo"></div>
+  		</div>
+  		
+    	<p class="often-text">我们在您常去的网点提供</p>
+    	<p class="often-text">贴心的免费生活服务，</p>
+    	<p class="often-text">一切尽在不言中。</p>
+    	
+    </div>
+    <!--第四页--资产配置-->
+  	<div class="page asset">
+    	<p class="asset_head">2016年资产配置情况</p>
+    	<div class="asset_contain" id="asset_contain"></div>
+    	<div class="asset_small"></div>
+    	<p class="asset_p1">恭喜您</p>
+    	<p class="asset_p2">你的资产配置是<span>稳健进取型</span></p>
+    	<p class="asset_p3">祝您2017年收入迈上新台阶</p>
+    	<div class="asset_logo"></div>
+    </div>
+     <!--第  页--工资收入-->
+     <div class="page wage">
+     	 <div class="consumption_money" id="wage">
+  			<div class="history_time"><span class="consumption_year">2016年工资收入</span></div>
+  		</div>
+  		<p class="purchase-text">2016年购买理财总金额稳稳地碾压了</p>
+  		<p class="purchase-text">
+  			<span id="">72%</span>阳光朋友
+  		</p>
+  		<div class="wage_img"></div>
+  		<p class="wage_title">工资节节高 !</p>
+  		<p class="wage_title1">幸福的额度又多了一些 !</p>
+  		<div class="wage_logo"></div>
+     </div>
+     <!--第五页--理财购买页-->
+    <div class="page purchase">
+  		<div class="consumption_money" id="purchase">
+  			<div class="history_time"><span class="consumption_year purchase-amount">2016年购买理财总额</span></div>
+  		</div>
+  		<p class="purchase-text">2016年购买理财总金额稳稳地碾压了</p>
+  		<p class="purchase-text">
+  			<span id="">72%</span>阳光朋友
+  		</p>
+  		<div class="dollars">
+  			<ul>
+  				<li class="full-dollar"></li>
+  				<li class="full-dollar"></li>
+  				<li class="full-dollar"></li>
+  				<li class="half-dollar"></li>
+  				<li class="zero-dollar"></li>
+  			</ul>
+  		</div>
+    	<p class="awesome-text">厉害了 &nbsp;我的亲</p>
+    	<div class="cartoon-img">
+    		<img src="img/cartoon_img.png"/>
+    	</div>
+    	<div class="logos purchase-logo"></div>
+    </div>
+  	<!--第六页--没有资产配置和理财购买的默认页-->
+  	<div class="page bill">
+    	<p class="bill_p1">向钱看 向厚赚！</p>
+    	<p class="bill_p2">人生得意须尽欢,开心不过钱生钱~</p>
+    	<p class="bill_p2">辞旧新开年,愿您赚个盆满钵满！</p>
+    	<div class="bill_logo"></div>
+   </div>
+    <!--第七页--云缴费-->
+  	 <div class="page payment">
+    	<div class="payment_logo"></div>
+    	<p class="payment_title payment_titles">别说不食人间烟火 ,</p>
+    	<p class="payment_title">每一笔记录那都叫生活~</p>
+    	<div class="consumption_cloud">
+  			<ul>
+  				<li>
+  					<p class="cloud_style">水费</p>
+  					<p class="cloud_number"><span class="cloud_num"><i>16</i>次</span><span class="cloud_money"><i>11136</i>元</span></p>
+  				</li>
+  				<li>
+  					<p class="cloud_style">电费</p>
+  					<p class="cloud_number"><span class="cloud_num"><i>16</i>次</span><span class="cloud_money"><i>11136</i>元</span></p>
+  				</li>
+  				<li>
+  					<p class="cloud_style">手机费</p>
+  					<p class="cloud_number"><span class="cloud_num"><i>16</i>次</span><span class="cloud_money"><i>11136</i>元</span></p>
+  				</li>
+  				<li>
+  					<p class="cloud_style">物业费</p>
+  					<p class="cloud_number"><span class="cloud_num"><i>16</i>次</span><span class="cloud_money"><i>11136</i>元</span></p>
+  				</li>
+  			</ul>
+  		    <div class="consumption_people"></div>
+  		    <div class="history_time history_times"><span class="consumption_title">云缴费使用情况</span></div>
+  		</div>
+        <p class="payment_p1">恭喜您成功掌握云缴费</p> 
+        <p class="payment_p1">晋升新新人类!</p>
+        <div class="payment_contain">
+        	<span class="payment_logos"></span>
+        </div>
+  	 </div>
+    <!--第八页--云支付-->
+    <div class="page consumption">
+  		<div class="cloud_logo"></div>
+  		<div class="consumption_money" id="consumption_money">
+  			<div class="history_time"><span class="consumption_year">2016年共消费</span></div>
+  		</div>
+  		<div id="consumption_pie">
+  			
+  		</div>
+    	<p class="consumption_point">2106年您的消费</p>
+    	<p class="consumption_point">当真是壕起来,连自己都害怕呀！</p>
+    	<div class="logos"></div>
+    </div>
+  	<!--第九页--云缴费/云支付默认页-->
+  	<div class="page cloud_default">
+  		<div class="cloudLogo"></div>
+  		<p class="default_title">使用云支付时间</p>
+  		<p class="default_p">人生三大憾事,美人迟暮,</p>
+  		<p class="default_p">帅哥发福,不会使用预支付......</p>
+  		<div class="default_see"></div>
+  		<div class="paymentLogo"></div>
+  		<p class="default_title">云缴费使用情况</p>
+  		<p class="default_p">别说不食人间烟火,</p>
+  		<p class="default_p">每一笔记录那都是生活~</p>
+  		<div class="default_look"></div>
+  		<div class="default_logo"></div>
+  		<div class="default_people"></div>
+  	</div>
+  	<!--第十页--称号页面-->
+  	<div class="page designation">
+  		<div class="diamond_img"></div>
+    	<div class="decrible">
+    		<p class="designation-text">花钱小能手</p>
+	    	<p class="designation-text">恭喜您成为尊贵的年度</p>
+	    	<p class="designation-text designation-name">"钻石用户"</p>
+    	</div>
+    	<div class="platinum_logo"></div>
+    </div>
+  	<!--白金称号-->
+  	<div class="page platinum">
+  		<div class="platinum_img"></div>
+    	<div class="decrible">
+    		<p class="designation-text">花钱小能手</p>
+	    	<p class="designation-text">恭喜您成为尊贵的年度</p>
+	    	<p class="designation-text designation-name">"白金用户"</p>
+    	</div>
+    	<div class="platinum_logo"></div>
+    </div>
+  <!--皇冠称号-->
+  	<div class="page crown">
+  		<div class="crown_img"></div>
+    	<div class="decrible">
+    		<p class="designation-text">花钱小能手</p>
+	    	<p class="designation-text">恭喜您成为尊贵的年度</p>
+	    	<p class="designation-text designation-name">"皇冠用户"</p>
+    	</div>
+    	<div class="platinum_logo"></div>
+    </div>
+   <!--黄金称号-->
+  	<div class="page gold">
+  		<div class="gold_img"></div>
+    	<div class="decrible">
+    		<p class="designation-text">花钱小能手</p>
+	    	<p class="designation-text">恭喜您成为尊贵的年度</p>
+	    	<p class="designation-text designation-name">"黄金用户"</p>
+    	</div>
+    	<div class="platinum_logo"></div>
+    </div>
+    <!--白银称号-->
+  	<div class="page silver">
+  		<div class="silver_img"></div>
+    	<div class="decrible">
+    		<p class="designation-text">花钱小能手</p>
+	    	<p class="designation-text">恭喜您成为尊贵的年度</p>
+	    	<p class="designation-text designation-name">"黄金用户"</p>
+    	</div>
+    	<div class="platinum_logo"></div>
+   </div>
+  </div>
+</div>
+</body>
+<script> 
+	 
+
+	
+</script>
+</html>
