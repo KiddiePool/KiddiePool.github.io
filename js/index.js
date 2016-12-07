@@ -25,6 +25,14 @@ $(document).ready(function() {
 	
 	if (browser.versions.mobile) {//判断是否是移动设备打开。browser代码在下面
 		  var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
+		  if (browser.versions.ios) {
+		    //是否在IOS浏览器打开
+		    now = 100 * ((w-80)/ 640);
+		  }
+		  if(browser.versions.android){
+		  	now = 100 * ((w-80)/ 640);
+		    //是否在安卓浏览器打开
+		  }
 		  if (ua.match(/MicroMessenger/i) == "micromessenger") {
 		    //在微信中打开
 		    now = 100 * ((w-50)/ 640);
@@ -35,10 +43,7 @@ $(document).ready(function() {
 		  if (ua.match(/QQ/i) == "qq") {
 		    //在QQ空间打开
 		  }
-		  if (browser.versions.ios) {
-		    //是否在IOS浏览器打开
-		    now = 100 * ((w-50)/ 640);
-		  }
+		 
 		  if(browser.versions.android){
 		    //是否在安卓浏览器打开
 		  }
@@ -75,13 +80,16 @@ $(document).ready(function() {
 			padding: 0
 		},
 		series: [{
-
+			center:['45%','50%'],
 			type: 'pie',
 			radius: ['25%', '50%'],
 			label: {
 				normal: {
 					show: true,
-					formatter: "{b} \n{d}%",
+//					formatter: "{b} \n{d}%",
+					formatter: function (obj) {
+					 return obj.name + '\n' + obj.percent.toFixed(0) + '%'
+					                       },
 					textStyle:{
             			color:"#ffd413"
             		}
