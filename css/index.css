@@ -359,7 +359,7 @@ body {
 	position:relative;
 	background:url(../img/historyBj.png) no-repeat center;
 	background-size:contain;
-	vertical-align: middle;
+	vertical-align: top;
 }
 .history_numer i img{
 	width:0.18rem;
