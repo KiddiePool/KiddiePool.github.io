@@ -137,6 +137,9 @@ body {
 	background: #8c0cc1;
 	position: relative;
 }
+.singlePage {
+	display: none;
+}
 /*工资收入*/
 #wage{
 	margin-top:1rem;
@@ -161,7 +164,7 @@ body {
 .wage_logo{
 	width:3.08rem;
 	height:0.63rem;
-	margin-top:0.3rem;
+	margin-top:0.4rem;
 	margin-right:0.36rem;
 	background:url(../img/logos.png) no-repeat center;
 	background-size:contain;
@@ -233,6 +236,7 @@ body {
 }
 .payment_title{
 	font-size: 0.46rem;
+	font-weight: bold;
 	text-align: center;
 	color:#ffcd10;
 }
@@ -247,7 +251,7 @@ body {
 	margin:0.5rem auto 0;
 }
 .payment .consumption_cloud ul {
-	margin-left:2.24rem;
+	margin-left:2.54rem;
 }
 .payment .consumption_people{
 	width:2.59rem;
@@ -272,7 +276,7 @@ body {
 	display: inline-block;
 	width:3.08rem;
 	height:0.63rem;
-	margin-top:0.1rem;
+	margin-top:0.2rem;
 	margin-right:0.14rem;
 	background:url(../img/logos.png) no-repeat center;
 	background-size:contain;
@@ -303,14 +307,14 @@ body {
 	font-size: 0.38rem;
 	text-align: center;
 	color:#fdd000;
-	margin-top:0.38rem;
+	margin-top:0.28rem;
 }
 .asset_p2{
 	font-size: 0.42rem;
 	text-align: center;
 	font-weight: bolder;
 	color:#fdd000;
-	margin-top:0.3rem;
+	margin-top:0.2rem;
 	
 }
 .asset_logo{
@@ -524,7 +528,6 @@ body {
 	width:100%;
 	height:5.0rem;
 }
-
 .consumption_cloud{
 	height:4.37rem;
 	position: relative;
@@ -536,12 +539,12 @@ body {
 }
 .cloud_style{
 	 color:#fdd000;
-	  font-size:0.3rem;
+	  font-size:0.36rem;
 	 font-weight: bold;
 }
 .cloud_number{
 	color:#fff;
-	font-size:0.3rem;
+	font-size:0.36rem;
 	margin:0.1rem 0;
 }
 .cloud_number i{
@@ -609,16 +612,16 @@ body {
 
 /*第三页--常去网点*/
 .consumption_cloud.welcome {
-	height: 3.37rem;
+	height: 3.0rem;
 	margin-top: 0.52rem;
 }
 
 .welcome table  {
 	margin-top: 0.17rem;
 	font-family: "微软雅黑";
-	font-size: 0.30rem;
+	font-size: 0.36rem;
 	color: #FDD000;
-	line-height: 0.48rem;
+	line-height: 0.56rem;
 }
 .welcome table th {
 	color: #FFFFFF;
@@ -658,7 +661,7 @@ body {
 
 
 /*第五页--理财购买*/
-#purchase {
+#purchase-cmt {
 	margin-top: 0.9rem;
 	margin-bottom: 0.54rem;
 }
