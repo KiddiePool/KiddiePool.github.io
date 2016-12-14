@@ -335,10 +335,10 @@ $(document).ready(function() {
 	    		oftenNetwork(userData);
 	    		//资产配置
 	    		asset(userData);
-	    		//工资收入
-	    		salary(userData);
 	    		//理财购买页面
 				purchase(userData);
+				//工资收入
+	    		salary(userData);
 				//没有资产配置和理财购买的页面
 				//defaults(userData);
 				//云缴费
