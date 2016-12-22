@@ -74,6 +74,24 @@ $(document).ready(function() {
 					}
 			};
 			
+
+
+
+            showimg();//加载第一屏
+		    $(window).scroll(function(){
+		        showimg();//显示当前滚动位置一下两屏且没有被加载的图片
+		    });
+			function showimg(){
+			    var vtop=$(document).scrollTop();//滚动条滚动的距离
+			    var wheight=$(window).height();//窗口高度　
+			    $("img").each(function(){//遍历img
+			        var truesrc=$(this).attr("truesrc");//获取真实图片地址
+			        if(truesrc&&$(this).offset().top<=(wheight+vtop)){ //如果truesrc存在且有值的时候加载。
+			            $(this).attr("src",truesrc).removeAttr("truesrc");//赋值真实图片地址并移除truesrc属性防止重复加载。
+			        }
+			    });
+			}
+			
 	//引导页
 	var guide = function () {
 		$("#guide").addClass('page').show();
