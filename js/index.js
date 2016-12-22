@@ -381,7 +381,7 @@ $(document).ready(function() {
 	      // 删除创建元素
 	      document.body.removeChild(aux);*/
 	     
-	     var value = $('#copy_contain').html();
+	     /*var value = $('#copy_contain').html();
 	     alert(value);
 	     if(event.clipboardData){
 	     	alert(1)
@@ -389,7 +389,7 @@ $(document).ready(function() {
 		}else if(window.clipboardData){
 			alert(2)
 			window.clipboardData.setData("text", value);
-		}
+		}*/
 		
 		});
     
