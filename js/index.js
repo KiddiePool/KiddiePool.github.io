@@ -367,7 +367,7 @@ $(document).ready(function() {
     });
     //点击复制
     $('.clickCopy').on('click',function() {
-    	  var aux = document.createElement("input");
+    	  /*var aux = document.createElement("input");
 	      // 获取复制内容
 	      var content = document.getElementById('copy_contain').innerHTML || document.getElementById('copy_contain').value;
 	      // 设置元素内容
@@ -379,8 +379,16 @@ $(document).ready(function() {
 	      // 将内容复制到剪贴板
 	      document.execCommand("copy");
 	      // 删除创建元素
-	      document.body.removeChild(aux);
-    })
+	      document.body.removeChild(aux);*/
+	     
+	     var value = $('#copy_contain').html();
+	     alert(value);
+	     if(event.clipboardData){
+			return event.clipboardData.setData("text/plain", value);
+			}else if(window.clipboardData){
+			return window.clipboardData.setData("text", value);
+			}
+		});
     
 	function Num(opt) {
 		this.data = opt.data || 0;
