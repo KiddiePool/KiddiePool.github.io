@@ -4,56 +4,55 @@ $(document).ready(function() {
 	    var now = 100 * (w/ 640); //APP里面打开的尺寸；
 	
 	//判断打开方式
-	var browser = {
-			versions: function () {
-			    var u = navigator.userAgent, app = navigator.appVersion;
-			    return {     //移动终端浏览器版本信息
-			      trident: u.indexOf('Trident') > -1, //IE内核
-			      presto: u.indexOf('Presto') > -1, //opera内核
-			      webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
-			      gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
-			      mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
-			      ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
-			      android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或uc浏览器
-			      iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
-			      iPad: u.indexOf('iPad') > -1, //是否iPad
-			      webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
-			    };
-			  }(),
-			language: (navigator.browserLanguage || navigator.language).toLowerCase()
-		};
-	
-	if (browser.versions.mobile) {//判断是否是移动设备打开。browser代码在下面
-		  var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
-		  if (browser.versions.ios) {
-		    //是否在IOS浏览器打开
-		    now = 100 * ((w-80)/ 640);
-		  }
-		  if(browser.versions.android){
-		  	now = 100 * ((w-80)/ 640);
-		    //是否在安卓浏览器打开
-		  }
-		  if (ua.match(/MicroMessenger/i) == "micromessenger") {
-		    //在微信中打开
-		    now = 100 * ((w-50)/ 640);
-		  }
-		  if (ua.match(/WeiBo/i) == "weibo") {
-		    //在新浪微博客户端打开
-		  }
-		  if (ua.match(/QQ/i) == "qq") {
-		    //在QQ空间打开
-		  }
-		 
-		  if(browser.versions.android){
-		    //是否在安卓浏览器打开
-		  }
-		} else {
-		  //否则就是PC浏览器打开
-		}
-	
+//	var browser = {
+//			versions: function () {
+//			    var u = navigator.userAgent, app = navigator.appVersion;
+//			    return {     //移动终端浏览器版本信息
+//			      trident: u.indexOf('Trident') > -1, //IE内核
+//			      presto: u.indexOf('Presto') > -1, //opera内核
+//			      webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+//			      gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+//			      mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+//			      ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+//			      android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或uc浏览器
+//			      iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+//			      iPad: u.indexOf('iPad') > -1, //是否iPad
+//			      webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+//			    };
+//			  }(),
+//			language: (navigator.browserLanguage || navigator.language).toLowerCase()
+//		};
+//	
+//	if (browser.versions.mobile) {//判断是否是移动设备打开。browser代码在下面
+//		  var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
+//		  if (browser.versions.ios) {
+//		    //是否在IOS浏览器打开
+//		    now = 100 * ((w-80)/ 640);
+//		  }
+//		  if(browser.versions.android){
+//		  	now = 100 * ((w-80)/ 640);
+//		    //是否在安卓浏览器打开
+//		  }
+//		  if (ua.match(/MicroMessenger/i) == "micromessenger") {
+//		    //在微信中打开
+//		    now = 100 * ((w-50)/ 640);
+//		  }
+//		  if (ua.match(/WeiBo/i) == "weibo") {
+//		    //在新浪微博客户端打开
+//		  }
+//		  if (ua.match(/QQ/i) == "qq") {
+//		    //在QQ空间打开
+//		  }
+//		 
+//		  if(browser.versions.android){
+//		    //是否在安卓浏览器打开
+//		  }
+//		} else {
+//		  //否则就是PC浏览器打开
+//		}
+//	
 		
 	 $("html").css("fontSize", now + "px");
-
     var data = {
 				"code":"0",						//#正确或错误的状态码，0：正确 1：错误
 				"message":"提示信息",			//#返回信息
@@ -71,7 +70,7 @@ $(document).ready(function() {
 					"payment":[{"name":"水费","amt":"164.8","cnt":12},{"name":"电费","amt":"164.8","cnt":20}],		//#云缴费
 					"consume_amt":"46124.66",	//#云支付总消费金额
 					"consume_categ":[{"value":20,"name":"旅游"},{"value":35,"name":"网购"},{"value":22,"name":"餐饮"},{"value":23,"name":"其他"}],
-					"cust_lvl_name":"白银用户"	//#用户等级
+					"cust_lvl_name":"潜力股"	//#用户等级
 					}
 			};
 			
@@ -174,14 +173,14 @@ $(document).ready(function() {
 			// 使用刚指定的配置项和数据显示图表。
 			myChart.setOption(option);
 			
-			if(userData.asset_desc == '稳健'){
-				userData.asset_desc = '稳健进取型';
-			}else if(userData.asset_desc == '积极'){
-				userData.asset_desc = '积极主动型';
-			}
+//			if(userData.asset_desc == '稳健'){
+//				userData.asset_desc = '稳健进取型';
+//			}else if(userData.asset_desc == '积极'){
+//				userData.asset_desc = '积极主动型';
+//			}
 			
 			
-			$('.asset_p2 span').html(userData.asset_desc);
+			$('.asset_p2').html(userData.asset_desc+"型");
 			
 		}
 	}
@@ -302,27 +301,29 @@ $(document).ready(function() {
 		if(userData.cust_lvl_name){
 			switch(userData.cust_lvl_name)
 				{
-				case "皇冠用户":
-				  $('#queen').addClass('page').show();
+				case "剁手小公举":
+				  $('#princess').addClass('page').show();
 				  break;
-				case "钻石用户":
-				  $('#diamond').addClass('page').show();
+				case "理财小达人":
+				  $('#super').addClass('page').show();
 				  break;
-				case "白金用户":
-				  $('#ptGold').addClass('page').show();
+				case "隐形小土豪":
+				  $('#richer').addClass('page').show();
 				  break;
-				case "黄金用户":
-				  $('#gold').addClass('page').show();
-				  break;
-				case "白银用户":
-				  $('#slivery').addClass('page').show();
+				case "潜力股":
+				  $('#potential').addClass('page').show();
 				  break;
 				default:
 				  break;
 				}
 		}
 	}
-	
+    var shareEvent=function(){
+    	$(".clickCopy").on("click",function(){
+    		var $val=$(".copy_contain").html();
+    		console.log($val)
+    	})
+    }
 	var renderData = function(data){
 		 if(data.code == 0){
 	    	if(data.data){
@@ -349,6 +350,8 @@ $(document).ready(function() {
 				//defaultPay(userData);
 				//称号页面
 				designation(userData);
+				//分享页面
+				shareEvent();
 	    	}
 	    }
 	}
@@ -362,6 +365,22 @@ $(document).ready(function() {
 		    duration: 200,
 		    drag: true
     });
+    //点击复制
+    $('.clickCopy').on('click',function() {
+    	  var aux = document.createElement("input");
+	      // 获取复制内容
+	      var content = document.getElementById('copy_contain').innerHTML || document.getElementById('copy_contain').value;
+	      // 设置元素内容
+	      aux.setAttribute("value", content);
+	      // 将元素插入页面进行调用
+	      document.body.appendChild(aux);
+	      // 复制内容
+	      aux.select();
+	      // 将内容复制到剪贴板
+	      document.execCommand("copy");
+	      // 删除创建元素
+	      document.body.removeChild(aux);
+    })
     
 	function Num(opt) {
 		this.data = opt.data || 0;

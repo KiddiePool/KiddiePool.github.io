@@ -310,7 +310,7 @@ body {
 	margin-top:0.28rem;
 }
 .asset_p2{
-	font-size: 0.42rem;
+	font-size: 0.74rem;
 	text-align: center;
 	font-weight: bolder;
 	color:#fdd000;
@@ -320,7 +320,7 @@ body {
 .asset_logo{
 	width:3.08rem;
 	height:0.63rem;
-	margin:0.5rem auto 0;
+	margin:0.14rem auto 0;
 	background:url(../img/logos.png) no-repeat center;
 	background-size:contain;
 }
@@ -438,7 +438,7 @@ body {
 	width:3.04rem;
 	height:0.63rem;
 	margin-top:0.43rem;
-	margin-right:0.5rem;
+	margin-left:0.28rem;
 	background:url(../img/guide_logo.png) no-repeat center;
 	background-size:contain;
 }
@@ -731,79 +731,306 @@ body {
 	text-align: left;
 	margin-left: 0.5rem;
 }
-
-
-
-.diamond_img{
-	width:5.84rem;
-	height: 6.25rem;
-	background:url('../img/diamond.png') no-repeat center;
-	background-size: contain;
-	margin:0 auto;
+/*小公举*/
+.wp .princess,.wp .super,.wp .richer,.wp .potential,.wp .share,.wp .billAccount{
+	padding:0;
 }
-.designation-text {
-	font-family: "微软雅黑";
-	font-size: 0.4rem;
-	line-height: 0.68rem;
-	font-weight: bold;
-	color: #FDD000;
-	text-align: center;
+.arrow{
+	width:0.8rem;
+	height:0.68rem;
+	background:url(../img/arrower.png) no-repeat center;
+	background-size:contain;
+	margin:0.66rem auto 0.26rem;
 }
-.designation-name {
-	font-size: 0.7rem;
-	font-weight: bolder;
-	margin-top:0.2rem;
-}
-/*白金用户*/
-.platinum_img{
-	width: 3.11rem;
-	height: 5.42rem;
-	background:url('../img/platinum.png') no-repeat center;
-	background-size: contain;
-	margin: 0.65rem auto 0.54rem;
-    
-}
-.platinum .decrible,.crown .decrible{
-	margin:0; 
-}
-.platinum_logo{
+.princess_logo{
 	width:3.08rem;
 	height:0.63rem;
 	background:url(../img/logos.png) no-repeat center;
 	background-size:contain;
 	position: absolute;
-	bottom:0.56rem;
-	left:50%;
-	margin-left:-1.54rem;
+	top:0.3rem;
+	right:0.45rem;
 }
-/*皇冠用户*/
-.crown{
-	background:url(../img/crown_bj.png) no-repeat center;
-	background-size:cover;
-}
-.crown_img{
-	width:3.51rem;
-	height:4.26rem;
-	background:url(../img/crown.png) no-repeat center;
+.princess_img{
+	width:4.1rem;
+	height:5.55rem;
+	margin:0.96rem 0 0.12rem 0.42rem;
+	background:url(../img/princess.png) no-repeat center;
 	background-size:contain;
-	margin: 1.74rem auto 0;
 }
-/*黄金用户*/
-.wp .gold{
-	padding:0;
+.typeDecrible_one{
+	font-family: "微软雅黑";
+	font-weight: bold;
+	font-size: 0.4rem;
+	color: #fdd000;
+	text-align: center;
 }
-.gold_img{
+.typeDecrible_two{
+	/*font-family: "方正兰亭粗黑简体";*/
+	font-size: 0.74rem;
+	color: #fdd000;
+	font-weight: bolder;
+	/*margin-top:0.2rem;
+	margin-bottom:0.1rem;*/
+	text-align: center;
+}
+.typeDecrible_three{
+	font-family: "微软雅黑";
+	font-weight: bold;
+	font-size: 0.48rem;
+	color: #fdd000;
+	text-align: center;
+}
+.surprise{
 	width:100%;
-	height:4.03rem;
-	background:url(../img/gold.png) no-repeat center;
-	background-size:contain;
-	margin: 1.74rem auto 0.7rem;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	font-size: 0.3rem;
+	color: #fdd000;
+	text-align: center;
+	margin:0 auto;
 }
-/*白银用户*/
-.silver_img{
-	width:4.98rem;
-	height:3.91rem;
-	background:url(../img/silver.png) no-repeat center;
+/*理财小达人*/
+.super_img{
+	width:4.37rem;
+	height:5.11rem;
+	margin:0.42rem 0 0.12rem 0.8rem;
+	background:url(../img/super.png) no-repeat center;
 	background-size:contain;
-	margin: 2.16rem auto 0.46rem;
+}
+.super_logo{
+	width:3.08rem;
+	height:0.63rem;
+	background:url(../img/logos.png) no-repeat center;
+	background-size:contain;
+	margin:0.4rem auto 0;
+}
+/*隐形小土豪*/
+.richer_logo{
+	width:3.08rem;
+	height:0.63rem;
+	background:url(../img/logos.png) no-repeat center;
+	background-size:contain;
+	margin-top:0.37rem;
+	margin-left:0.39rem;
+}
+.richer_img{
+	width:4.33rem;
+	height:4.93rem;
+	margin:0.6rem 0 0.16rem 1.44rem;
+	background:url(../img/richer.png) no-repeat center;
+	background-size:contain;
+}
+/*潜力股*/
+.potential_logo{
+	width:3.08rem;
+	height:0.63rem;
+	background:url(../img/logos.png) no-repeat center;
+	background-size:contain;
+	margin-top:0.34rem;
+	margin-left:0.39rem;
+}
+.potential_img{
+	width:4.24rem;
+	height:5.32rem;
+	margin:0.16rem 0 0.22rem 1.48rem;
+	background:url(../img/potential.png) no-repeat center;
+	background-size:contain;
+}
+/*分享*/
+.share{
+	background:#8c0cc1 url(../img/shareBj.png) no-repeat center bottom;
+    background-size: contain;
+}
+.share_img{
+	width: 3.04rem;
+    height: 0.63rem;
+    margin-top: 0.43rem;
+    margin-left: 0.48rem;
+    background: url(../img/guide_logo.png) no-repeat center;
+    background-size: contain;
+}
+.flower{
+	width: 4.31rem;
+    height: 2.88rem;
+    background: url(../img/flower.png) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    top:0.43rem;
+    right:0;
+}
+.share_Title{
+	position:relative;
+	width: 5.74rem;
+    height: 2.23rem;
+    margin:0.46rem auto 0;
+}
+.share_Title img{
+	width: 5.74rem;
+    height: 2.23rem;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 100;
+}
+.shareCopy{
+	width:5.01rem;
+	height:2.49rem;
+	padding-top:0.24rem;
+	margin:0.2rem auto 0;
+	background: url(../img/shareCopy.png) no-repeat center;
+    background-size: contain;
+}
+.voucherMoney{
+	width:2.81rem;
+	float: left;
+	/*font-family: "方正兰亭粗黑简体";*/
+	font-size: 1.22rem;
+	color: #6b1685;
+	font-weight: bolder;
+	position: relative;
+	text-align: center;
+}
+.voucherMoney i{
+	font-style: normal;
+	font-size: 0.26rem;
+	color: #6b1685;
+	font-weight: bolder;
+	position: absolute;
+	top:0.2rem;
+	left:0.58rem;
+} 
+.shareTitle{
+	width:2.2rem;
+	float: right;
+}
+.shareDescribe{
+	/*font-family: "方正兰亭粗黑简体";*/
+	font-size: 0.5rem;
+	color: #6b1685;
+	font-weight: bolder;
+	margin-top:0.18rem;
+}
+.clickCopy{
+	width:1.57rem;
+	height:0.46rem;
+	line-height:0.46rem;
+	border-radius: 0.08rem;
+	margin-top:0.08rem;
+	font-size: 0.28rem;
+	text-align: center;
+	color:#fdd000 ;
+	background:#6b1685 ;
+}
+.copy_contain{
+	width:4.31rem;
+	height:0.47rem;
+	line-height: 0.47rem;
+	background: url(../img/copy_contain.png) no-repeat center;
+    background-size: contain;
+	clear: both;
+	margin:0 auto;
+	text-align: center;
+	font-size: 0.24rem;
+	font-weight: bold;
+	color:#6b1685 ;
+}
+.voucher{
+	width:2.5rem;
+	height:0.67rem;
+	margin:0 auto 0.24rem;
+	background:url(../img/voucher.png) no-repeat center;
+	background-size:contain;
+}
+.shareGo{
+	width:3.41rem;
+	height:0.67rem;
+	margin:0 auto;
+	background:url(../img/shareGo.png) no-repeat center;
+	background-size:contain;
+}
+.sharePeople{
+	display: block;
+	width:2.82rem;
+	height:2.92rem;
+	margin:0.04rem auto 0;
+}
+/*点击生成对账单1*/
+.sharePrincess{
+	width:1.76rem;
+	height:3.36rem;
+	background:url(../img/sharePrincess.png) no-repeat center;
+	background-size:contain;
+	margin:0.28rem auto 0;
+	position: relative;
+}
+.sharePrincess img{
+	display: block;
+	width:1.37rem;
+	height:2.00rem;
+	position: absolute;
+	bottom:0;
+	right:-1.6rem;
+}
+.AccountCopy{
+	width: 5.01rem;
+    height: 2.73rem;
+    background:url(../img/AccountCopy.png) no-repeat center;
+	background-size:contain;
+    margin: 0.08rem auto 0;
+}
+.billClick{
+	width:3.41rem;
+	height:0.67rem;
+	margin:0.16rem auto 0;
+	background:url(../img/billClick.png) no-repeat center;
+	background-size:contain;
+}
+.billAccountTitle{
+	margin-top:0.24rem;
+}
+.accountDescribe{
+	width:100%;
+	float: left;
+	text-align: center;
+	font-size: 0.3rem;
+	font-weight: bold;
+	color:#6b1685 ;
+	}
+.billAccountMoney{
+	padding-top:0.30rem;
+	padding-left:1.18rem;
+	/*font-family: "方正兰亭粗黑简体";*/
+	font-size: 1.22rem;
+	color: #6b1685;
+	font-weight: bolder;
+	position: relative;
+}
+.billAccountMoney span{
+	position: relative;
+}
+.billAccountMoney i{
+	font-style: normal;
+	font-size: 0.26rem;
+	color: #6b1685;
+	font-weight: bolder;
+	position: absolute;
+	top:0.2rem;
+	left:-0.1rem;
+}
+.billAccountMoney strong{
+	font-style: normal;
+	font-size: 0.48rem;
+	color: #6b1685;
+	font-weight: bolder;
+}
+/*点击生成对账单2*/
+.yearBj{
+	display: block;
+	width:5.74rem;
+	height:2.76rem;
+	margin:0 auto;
+}
+.billClicks{
+	margin-top:0.14rem;
 }
