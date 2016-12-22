@@ -366,7 +366,7 @@ $(document).ready(function() {
 		    drag: true
     });
     //点击复制
-    $('.clickCopy').on('click',function() {
+    $('.clickCopy').on('click',function(event) {
     	  /*var aux = document.createElement("input");
 	      // 获取复制内容
 	      var content = document.getElementById('copy_contain').innerHTML || document.getElementById('copy_contain').value;
@@ -384,10 +384,13 @@ $(document).ready(function() {
 	     var value = $('#copy_contain').html();
 	     alert(value);
 	     if(event.clipboardData){
-			return event.clipboardData.setData("text/plain", value);
-			}else if(window.clipboardData){
-			return window.clipboardData.setData("text", value);
-			}
+	     	alert(1)
+			event.clipboardData.setData("text/plain", value);
+		}else if(window.clipboardData){
+			alert(2)
+			window.clipboardData.setData("text", value);
+		}
+		
 		});
     
 	function Num(opt) {
